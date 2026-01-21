@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="tr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>İremsultan Karahanlar - Anasayfa</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- Üst Menü -->
+  <header>
+    <div class="container nav">
+      <div class="logo">İremsultan Karahanlar</div>
+      <nav>
+        <a href="index.html" class="active">Anasayfa</a>
+        <a href="about.html">Hakkımda</a>
+        <a href="projects.html">Projelerim</a>
+        <a href="history.html">Eğitimlerim</a>
+        <a href="contact.html">İletişim</a>
+      </nav>
+      <div class="language-switcher" style="margin-left:auto;">
+        <button data-lang="tr" onclick="changeLang('tr')">🇹🇷 TR</button>
+        <button data-lang="en" onclick="changeLang('en')">🇬🇧 EN</button>
+      </div>
+      <button id="darkToggle" class="dark-btn">🌙</button>
+    </div>
+    </div>
+  </header>
+
+  <div class="progress-bar" id="progressBar"></div>
+
+  <!-- Ana İçerik -->
+  <main class="container">
+
+    <!-- HERO Bölümü -->
+    <section class="hero card">
+      <div>
+        <div class="figure">
+          <img src="images/ben.jpg" alt="İremsultan Karahanlar"
+            style="border-radius:50%; width:280px; height:280px; object-fit:cover;">
+        </div>
+        <h1>Merhaba, ben <span style="color:var(--accent)">İremsultan Karahanlar</span></h1>
+        <p>İstanbul Topkapı Üniversitesinde yazılım mühendisliği 4. sınıf öğrencisiyim.
+          Bu siteyi kendimi tanıtmak için hazırladım.</p>
+        <p><a class="cta" href="about.html">Daha Fazla Tanıyın</a></p>
+      </div>
+    </section>
+
+    <!-- İlgi Alanları -->
+    <section class="card">
+      <h2>Üzerinde Çalıştığım Yazılım Dilleri</h2>
+      <div class="skills">
+        <div class="skill">
+          <div class="skill-name">C#</div>
+          <div class="skill-bar">
+            <div class="skill-progress" data-progress="80"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <div class="skill-name">HTML/CSS</div>
+          <div class="skill-bar">
+            <div class="skill-progress" data-progress="90"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <div class="skill-name">Python</div>
+          <div class="skill-bar">
+            <div class="skill-progress" data-progress="70"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hızlı Bağlantılar -->
+    <section class="card">
+      <h2>Hızlı Erişim</h2>
+      <div class="grid-3">
+        <article>
+          <h3><a href="projects.html">Projelerim</a></h3>
+          <p class="small">Geliştirdiğim yazılım ve oyun projelerini inceleyin.</p>
+        </article>
+        <article>
+          <h3><a href="history.html">Eğitim Bilgilerim</a></h3>
+          <p class="small">Üniversite ve sertifika geçmişimi görüntüleyin.</p>
+        </article>
+        <article>
+          <h3><a href="contact.html">İletişim</a></h3>
+          <p class="small">Benimle bağlantıya geçin veya sosyal profillerimi ziyaret edin.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- Alt Bilgi -->
+  <footer class="footer">
+    <div class="container">
+      <p>İremsultan Karahanlar - 23040301124 |
+        <a href="mailto:iremsultankarahanlar@stu.topkapi.edu.tr">iremsultankarahanlar@stu.topkapi.edu.tr</a>
+      </p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>

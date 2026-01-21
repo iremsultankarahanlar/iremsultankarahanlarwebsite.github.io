@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>İremsultan Karahanlar - Eğitimlerim</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Üst Menü -->
+  <header>
+    <div class="container nav">
+      <div class="logo">İremsultan Karahanlar</div>
+      <nav>
+        <a href="index.html" class="active">Anasayfa</a>
+        <a href="about.html">Hakkımda</a>
+        <a href="projects.html">Projelerim</a>
+        <a href="history.html">Eğitimlerim</a>
+        <a href="contact.html">İletişim</a>
+      </nav>
+      <div class="language-switcher" style="margin-left:auto;">
+        <button data-lang="tr" onclick="changeLang('tr')">🇹🇷 TR</button>
+        <button data-lang="en" onclick="changeLang('en')">🇬🇧 EN</button>
+      </div>
+      <button id="darkToggle" class="dark-btn">🌙</button>
+    </div>
+  </header>
+
+  <div class="progress-bar" id="progressBar"></div>
+
+  <!-- Ana İçerik -->
+  <main class="container">
+    <section class="card">
+      <h1>Eğitim Bilgilerim</h1>
+      <p>Akademik geçmişim ve aldığım eğitim programları aşağıda yer almaktadır.</p>
+    </section>
+
+    <!-- Eğitim Bilgileri (Alt Alta) -->
+    <section class="education-list">
+      <div class="education-item card">
+        <img src="images/topkapi.png" alt="İstanbul Topkapı Üniversitesi Logosu">
+        <div>
+          <h3>İstanbul Topkapı Üniversitesi</h3>
+          <p class="small">Yazılım Mühendisliği (Lisans) | 2023 - 2026</p>
+          <p>Python, C++ dillerini öğrendim ve mühendisliğin nasıl bir şey olduğunu kavradım.</p>
+        </div>
+      </div>
+
+      <div class="education-item card">
+        <img src="images/marmara.png" alt="Marmara Üniversitesi Logosu">
+        <div>
+          <h3>Marmara Üniversitesi</h3>
+          <p class="small">Bilgisayar Programcılığı (Önlisans) | 2021 - 2023</p>
+          <p>C, C#, HTML, CSS, JS ve Java dillerini öğrendim.</p>
+        </div>
+      </div>
+
+      <div class="education-item card">
+        <img src="images/bal.jpg" alt="Beşiktaş Anadolu Lisesi Logosu">
+        <div>
+          <h3>Beşiktaş Anadolu Lisesi</h3>
+          <p class="small">Lise Diploması | 2016 - 2020</p>
+          <p>Fen-Matematik ağırlıklı eğitim aldım.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sertifikalar -->
+    <section class="card">
+      <h2>Aldığım Sertifikalar</h2>
+      <ul>
+        <li>SQL ile Veri Tabanı Sorgulama Sertifika Programı – Sakarya Üniversitesi (2024)</li>
+      </ul>
+    </section>
+
+    <!-- Deneyim -->
+    <section class="card">
+      <h2>İş ve Staj Deneyimleri</h2>
+      <div class="experience">
+        <div>
+          <h4>Stajyer | Webbilir </h4>
+          <p class="small">Temmuz 2022 - Ağustos 2022</p>
+          <p>Web uygulamaları geliştirme süreçlerine destek verdim.</p>
+        </div>
+        <div>
+          <h4>Junior Yazılım Mühendisi | İstanbul Topkapı Üniversitesi</h4>
+          <p class="small">Şubat 2024 - Ağustos 2024</p>
+          <p>Proje geliştirme, hata ayıklama ve veritabanı yönetimi görevlerinde yer aldım.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Alt Bilgi -->
+  <footer class="footer">
+    <div class="container">
+      <p>İremsultan Karahanlar - 23040301124 | 
+         <a href="mailto:iremsultankarahanlar@stu.topkapi.edu.tr">iremsultankarahanlar@stu.topkapi.edu.tr</a></p>
+    </div>
+  </footer>
+<script src="script.js"></script>  
+</body>
+</html>

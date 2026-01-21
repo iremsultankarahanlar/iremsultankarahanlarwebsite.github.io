@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>İremsultan Karahanlar - Projelerim</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Üst Menü -->
+  <header>
+    <div class="container nav">
+      <div class="logo">İremsultan Karahanlar</div>
+      <nav>
+        <a href="index.html" class="active">Anasayfa</a>
+        <a href="about.html">Hakkımda</a>
+        <a href="projects.html">Projelerim</a>
+        <a href="history.html">Eğitimlerim</a>
+        <a href="contact.html">İletişim</a>
+      </nav>
+      <div class="language-switcher" style="margin-left:auto;">
+        <button data-lang="tr" onclick="changeLang('tr')">🇹🇷 TR</button>
+        <button data-lang="en" onclick="changeLang('en')">🇬🇧 EN</button>
+      </div>
+      <button id="darkToggle" class="dark-btn">🌙</button>
+    </div>
+  </header>
+
+  <div class="progress-bar" id="progressBar"></div>
+
+  <!-- Ana İçerik -->
+  <main class="container">
+    <section class="card">
+      <h1>Projelerim</h1>
+      <p>Üzerinde çalıştığım bazı yazılım projelerini aşağıda bulabilirsiniz.</p>
+
+      <div class="grid-3">
+
+        <article>
+          <h3>Yüz Tanıma ile Yoklama Sistemi</h3>
+          <iframe width="100%" height="200" src="https://www.youtube.com/embed/OKiWo7InPRE" 
+                  title="Yüz Tanıma Projesi" frameborder="0" allowfullscreen></iframe>
+          <p>Python, OpenCV ve veritabanı kullanan yüz tanıma tabanlı otomatik yoklama sistemi.</p>
+          <a class="cta" href="https://github.com/iremsultankarahanlar/Attendance-With-Face-Recognition" target="_blank">GitHub’da Gör</a>
+        </article>
+
+        <article>
+          <h3>Sesli ve Videolu Yüz Tanıma</h3>
+          <iframe width="100%" height="200" src="https://www.youtube.com/embed/4oni3XU7gEg"
+                  title="Sesli ve Videolu Yoklama" frameborder="0" allowfullscreen></iframe>
+          <p>Yüklenen bir videodan yüz tanıma ile otomatik yoklama alan gelişmiş sistem.</p>
+          <a class="cta" href="https://github.com/iremsultankarahanlar/Attendance-With-Face-Recognition" target="_blank">GitHub’da Gör</a>
+        </article>
+
+        <article>
+          <h3>Unity ile 2D Oyun</h3>
+          <iframe width="100%" height="200" src="https://www.youtube.com/embed/U2IIOYUt2bc"
+                  title="Unity 2D Oyun" frameborder="0" allowfullscreen></iframe>
+          <p>Unity tabanlı C# ile yazdığım eğlenceli bir 2D oyun projesi.</p>
+          <a class="cta" href="https://github.com/iremsultankarahanlar/Cat-Game" target="_blank">GitHub’da Gör</a>
+        </article>
+
+        <article>
+          <h3>Visual Studio ile 2D Oyun</h3>
+          <p>Visual Studio üzerinde veri tabanına sahip C# ile yazdığım bir 2D oyun projesi.</p>
+          <a class="cta" href="https://github.com/iremsultankarahanlar/Klee-Game" target="_blank">GitHub’da Gör</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- Alt Bilgi -->
+  <footer class="footer">
+    <div class="container">
+      <p>İremsultan Karahanlar - 23040301124 | 
+         <a href="mailto:iremsultankarahanlar@stu.topkapi.edu.tr">iremsultankarahanlar@stu.topkapi.edu.tr</a></p>
+    </div>
+  </footer>
+<script src="script.js"></script>  
+</body>
+</html>
