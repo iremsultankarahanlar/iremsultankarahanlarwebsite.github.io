@@ -1,0 +1,224 @@
+:root {
+  --accent: #ff6b6b;
+  --dark: #222;
+  --muted: #666;
+  --bg: #f7f7f9;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  font-family: system-ui, sans-serif;
+  margin: 0;
+  color: var(--dark);
+  background: var(--bg);
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+/* ----- HEADER ----- */
+header {
+  background: white;
+  border-bottom: 1px solid #eee;
+}
+
+.nav {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  padding: 12px 24px;
+}
+
+.logo {
+  font-weight: 700;
+  color: var(--accent);
+  font-size: 20px;
+}
+
+.nav a {
+  color: var(--dark);
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+}
+
+.nav a:hover {
+  background: #fff0f0;
+}
+
+/* ----- GENEL KART STİLİ ----- */
+.card {
+  background: white;
+  padding: 18px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(20,20,20,0.04);
+  margin-bottom: 18px;
+}
+
+/* ----- GRID DÜZENLERİ ----- */
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+@media (max-width: 900px) {
+  .grid-3 { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 600px) {
+  .grid-3 { grid-template-columns: 1fr; }
+}
+
+/* ----- HERO ----- */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.hero img {
+  border-radius: 50%;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+  border: 3px solid var(--accent);
+}
+
+.hero h1 {
+  font-size: 28px;
+  margin-bottom: 12px;
+}
+
+.hero p {
+  font-size: 16px;
+}
+
+/* ----- CTA BUTONU ----- */
+.cta {
+  display: inline-block;
+  background: var(--accent);
+  color: white;
+  padding: 10px 16px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.cta:hover {
+  background: #ff5a5a;
+}
+
+/* ----- MAKALELER / PROJE KARTLARI ----- */
+article {
+  background: #fff;
+  padding: 18px;
+  border-radius: 14px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+article:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
+}
+
+article iframe {
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+article h3 {
+  color: var(--accent);
+  font-size: 18px;
+  margin-top: 0;
+}
+
+article p {
+  font-size: 15px;
+  color: var(--dark);
+  margin-bottom: 12px;
+}
+
+/* ----- EĞİTİM SAYFASI ----- */
+.education-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.education-item {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.education-item img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--accent);
+}
+
+.education-item h3 {
+  margin-top: 0;
+  color: var(--accent);
+}
+
+/* ----- STAJ VE DENEYİM ----- */
+.experience {
+  display: grid;
+  gap: 16px;
+}
+
+/* ----- İLETİŞİM SAYFASI ----- */
+.contact-info ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-info li {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.contact-info a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+.contact-map iframe {
+  border-radius: 12px;
+  margin-top: 12px;
+}
+
+/* ----- DİL DEĞİŞTİRİCİ ----- */
+.language-switcher a {
+  text-decoration: none;
+  color: var(--dark);
+  margin-left: 8px;
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+
+.language-switcher a:hover {
+  background: #fff0f0;
+  color: var(--accent);
+}
+
+/* ----- ALT BİLGİ ----- */
+.footer {
+  padding: 24px;
+  text-align: center;
+  color: var(--muted);
+  font-size: 14px;
+}
